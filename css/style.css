@@ -51,8 +51,7 @@ body {
     margin-left: -40px;
   }
   
-  /*--- Media Queries ---*/
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .main-body {
       grid-template-columns: 1fr;
       grid-template-areas: "navbar" "main-content";
