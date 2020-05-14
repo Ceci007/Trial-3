@@ -55,7 +55,7 @@ body {
   @media screen and (max-width: 768px) {
     .main-body {
       grid-template-columns: 1fr;
-      grid-template-areas: "navbar" "main-content"
+      grid-template-areas: "navbar" "main-content";
     }
     
     #navbar {
