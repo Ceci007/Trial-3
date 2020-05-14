@@ -8,86 +8,117 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <main id="main-doc">
-      <h1 id="title">Daewoo</h1>
-      <div class="heading-underline"></div>
-      <p class="quote">The Black Mage.</p>
-      
-      <div class="container">
-      <div class="card">
-        <div id="img-div">
-            <img id="image" src="./img/black_mage.png" alt="Black Mage">
-        <div>
-        <div class="card-body">
-            <figcaption class="quote" id="img-caption">
-                This is a picture of the wizzard.
-            </figcaption>
-            <blockquote class="card-text">
-                The Black Mage is the most potent offensive spell casting class available 
-                to the Light Warriors in the original Final Fantasy. 
-            </blockquote>
-          </div>
-      </div>
-      </div>
-      </div>
-      </div>
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Technical Documentation Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-body">
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#python" class="nav-link">Python</a>
+      <a href="#variables" class="nav-link">Variables</a>
+      <a href="#scope" class="nav-link">Scope</a>
+      <a href="#functions" class="nav-link">Functions</a>
+    </nav>
     
-      <section class="main-section" id="black-mage-1">
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
         <header>
-            It has the lowest HP out of any character class, but can inflict negative status effects, bolster allies' offensive capabilities, and deal heavy damage to groups of enemies use Black Magic.
-            The Black Mage is wreathed in heavy blue robes, with only a pair of eyes peeking out from beneath the shadow cast by the job's large, pointed yellow hat. 
+          Introduction
         </header>
-      <section>
-      <section  class="main-section" id="black-mage-2">
         <p>
-            The Black Mage is unique in that its design has remained entirely unchanged across all remakes of the game, its sprites varying only in art style and poses.
-        </p>
-      </section>
-      <section  class="main-section" id="black-mage-3">
-        <p>
-            Lorem ipsum
-        </p>
-      </section>
-      <section  class="main-section" id="black-mage-4">
-        <p>
-            Lorem ipsum
-        </p>
-      </section>
-      <section  class="main-section" id="black-mage-5">
-        <p>
-            Lorem ipsum
+          Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales. Van Rossum led the language community until July 2018.
         </p>
         <p>
-          Lorem ipsum
-      </p>
-      <p>
-        Lorem ipsum
-    </p>
-    <p>
-      Lorem ipsum
-  </p>
-  <p>
-    Lorem ipsum
-</p>
-<p>
-  Lorem ipsum
-</p>
+Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python features a comprehensive standard library, and is referred to as "batteries included".
+        </p>
+        <p>
+Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open-source software and has a community-based development model. Python and CPython are managed by the non-profit Python Software Foundation.
+        </p>
       </section>
-    </main>
-    <p class="footer">for further information about Daewoo <a id="tribute-link" href="https://finalfantasy.fandom.com/wiki/Black_Mage_(Final_Fantasy)" target="_blank">click here</a></p>
+      <section class="main-section" id="python">
+        <header>
+          Python
+        </header>
+        <p>
+          Python has a very easy-to-read syntax. Some of Python's syntax comes from C, because that is the language that Python was written in. But Python uses whitespace to delimit code: spaces or tabs are used to organize code into groups. This is different from C. In C, there is a semicolon at the end of each line and curly braces ({}) are used to group code. Using whitespace to delimit code makes Python a very easy-to-read language.
+        </p>
+      </section>
+      <section class="main-section" id="variables">
+        <header>
+          Variables
+        </header>
+        <p>
+          You can use any letter, the special characters "_" and every number provided
+you do not start with it. 
 
-    <!--
+White spaces and signs with special meanings in Python, as "+" and "-" are
+not allowed. 
 
-    Hello Camper!
+I usually use lowercase with words separated by underscores as necessary to
+improve readability.
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+Remember that variable names are case sensitive. 
+        </p>
+        <p>
+          <ul>
+            <li><code>x = 123 			# integer </code></li>
+            <li><code>x = 123L			# long integer </code></li>
+            <li><code>x = 3.14 			# double float </code></li>
+            <li><code>x = "hello" 			# string </code></li>
+            <li><code>x = [0,1,2] 			# list </code></li>
+            <li><code>x = (0,1,2) 			# tuple </code></li>
+            <li><code>x = open(‘hello.py’, ‘r’) 	# file </code></li>
+        </ul>
+            </p>
+      </section>
+      <section class="main-section" id="scope">
+        <header>
+          Scope
+        </header>
+        <p>
+          What is namespace:
 
-    - The freeCodeCamp Team
+A namespace is a system to have a unique name for each and every object in Python. An object might be a variable or a method. Python itself maintains a namespace in the form of a Python dictionary. Let’s go through an example, a directory-file system structure in computers. Needless to say, that one can have multiple directories having a file with the same name inside of every directory. But one can get directed to the file, one wishes, just by specifying the absolute path to the file.
+Real-time example, the role of a namespace is like a surname. One might not find a single “Alice” in the class there might be multiple “Alice” but when you particularly ask for “Alice Lee” or “Alice Clark” (with a surname), there will be only one (time being don’t think of both first name and surname are same for multiple students).
+        </p>
+        <p>
+          On the similar lines, Python interpreter understands what exact method or variable one is trying to point to in the code, depending upon the namespace. So, the division of the word itself gives little more information. Its Name (which means name, an unique identifier) + Space(which talks something related to scope). Here, a name might be of any Python method or variable and space depends upon the location from where is trying to access a variable or a method.
+        </p>
+      </section>
+      <section class="main-section" id="functions">
+        <header>
+          Functions
+        </header>
+        <p>
+          A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
+        </p>
+        <p>
+As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.
+        </p>
+        <p>
+          <code>
+            def my_function(food): <br>
+  for x in food: <br>
+    print(x)<br>
 
-    -->
-    <script  src="js/index.js"></script>
+fruits = ["apple", "banana", "cherry"] <br>
+
+my_function(fruits)
+          </code>
+        </p>
+      </section>
+      </main>
+    </div>
+  </body>
+</html>
   </body>
 </html>
