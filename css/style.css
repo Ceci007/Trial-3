@@ -1,0 +1,28 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+  }
+  
+  .main-body {
+    display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    grid-template-areas: "navbar main-content";
+    grid-gap: 60px;
+    padding: 20px;
+  }
+  
+  #navbar {
+    grid-area: navbar;
+    position: fixed;
+  }
+  
+  #navbar a {
+    display: block;
+    border: 1px solid gray;
+    padding: 8px;
+    margin: 10px 0;
+    text-decoration: none; 
+    color: gray;
+    text-align: center;
+  }
+  
